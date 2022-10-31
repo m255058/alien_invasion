@@ -32,7 +32,6 @@ class AlienInvasion():
             elif event.type == pygame.KEYUP:
                 self._check_keyup_events(event)
 
-
     def _check_keydown_events(self,event):
         '''respond to keypressess'''
         if event.key == pygame.K_RIGHT:
