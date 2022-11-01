@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d47f42d-b62a-4740-897a-a78c9bfbe365" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/alien.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alien.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_Part1Q1.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_Part1Q1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/CRUSH.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/alien.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/alien.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ship.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/ship.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
