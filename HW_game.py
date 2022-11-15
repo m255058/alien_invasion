@@ -1,51 +1,33 @@
+import sys
 import pygame
-from pygame.sprite import Sprite
+from star import Star
 
-class Alien(Sprite):
-    '''A class to represent a single alien in the fleet'''
-    def __init__(self, ai_game):
-        '''initialize alien'''
-        super().__init__()
-        self.screen = ai_game.screen
-        # load the alien image and set its rects
-        self.image = pygame.image.load('images/alien.png')
-        self.rect = self.image.get_rect()
-        # Start each new alien near the top left
-        self.rect.x = self.rect.width
-        self.rect.y = self.rect.height
-        # store the alien's exact horizontal position
-        self.x = float(self.rect.x)
-
-class StarGame():
-    '''initialize game'''
-
+class StarGame:
     def __init__(self):
+        '''initialize game'''
         pygame.init()
-        self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
-        self.screen_width = 800
-        self.screen_height = 500
-        self.bg_color = (0, 0, 0)
-        self.aliens = pygame.sprite.Group()
-
+        self.screen = pygame.display.set_mode((500,500))
+        self.bg_color = (0,0,180)
+        #self.stars = pygame.sprite.Group()
+        #self._create_fleet()
     def run_game(self):
-        '''Main game loop'''
+        '''Start main loop'''
         while True:
-            self._update_screen()
+            for event in pygame.event.get():
+                if event.type == pygame.KEYUP:
+                    if event.key == pygame.K_q:
+                        sys.exit()
+            self.screen.fill(self.bg_color)
+            #self.stars.draw(self.screen)
+            pygame.display.flip()
+    '''def _create_fleet(self):
+        #make one star
+        star = Star(self)
+        self.stars.add(star)'''
 
-    def _update_screen(self):
-        '''update the images on screen'''
-        self.screen.fill(self.bg_color)
-        self.aliens.draw(self.screen)
-        pygame.display.flip()
+#----Main----------------------------------------
 
-    def _create_alien(self, alien_number, row_number):
-        '''Create an alien and place it in the row'''
-        alien = Alien(self)
-        alien_width, alien_height = alien.rect.size
-        alien.x = alien_width + 2 * alien_width * alien_number
-        alien.rect.x = alien.x
-        #alien.rect.y = alien.rect.height + 2 * alien.rect.height * row_number
-        #self.aliens.add(alien)
-
+game = StarGame()
+game.run_game()
 
 
