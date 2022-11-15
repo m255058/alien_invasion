@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8d47f42d-b62a-4740-897a-a78c9bfbe365" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW_game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_game2.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW_game2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star.py" beforeDir="false" afterPath="$PROJECT_DIR$/star.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
